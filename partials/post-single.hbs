@@ -1,25 +1,29 @@
 <article class="{{post_class}}">
   <header class="post-header">
-    <h1><a href="{{url}}" class="permalink">{{title}}</a></h1>
-    <p class="post-meta">By <span class="author">{{author.name}}</span></p>
+    <h1 class="post-title {{#if featured}}featured{{/if}}">
+      <a href="{{url}}" class="permalink">{{title}}</a>
+    </h1>
+    {{!-- <p>
+      <a href="{{url}}" class="permalink"><time class="post-time" datetime="{{date format='YYYY-MM-DD'}}">{{date}}</time></a>.
+    </p> --}}
+    {{!-- <p class="post-meta">By <span class="author">{{author.name}}</span></p> --}}
   </header>
 
   <div class="post-content">
-  {{content}}
+    {{#is "home"}}
+      {{excerpt words="26"}}… <a class="read-more" href="{{url}}">continue reading &raquo;</a>
+    {{else}}
+      {{content}}
+    {{/is}}
   </div>
 
-  {{^is "page"}}
-  <hr>
-
-  <footer class="post-footer">
-    <p>Posted on
-      <time class="post-time" datetime="{{date format='YYYY-MM-DD'}}">{{date}}</time>.
-      <a href="{{url}}" class="permalink">Permalink</a>.
-    </p>
-    <nav class="post-nav">
-      {{#prev_post}}<span class="post-nav-item prev">Previous: <a href="{{url}}">{{title}}</a></span>{{/prev_post}}
-      {{#next_post}}<span class="post-nav-item next">Next: <a href="{{url}}">{{title}}</a></span>{{/next_post}}
-    </nav>
-  </footer>
+  {{^is "home, page"}}
+    <hr>
+    <footer class="post-footer">
+      <nav class="post-nav">
+        {{#prev_post}}<span class="post-nav-item prev"><a href="{{url}}">{{title}}</a></span>{{/prev_post}}
+        {{#next_post}}<span class="post-nav-item next"><a href="{{url}}">{{title}}</a></span>{{/next_post}}
+      </nav>
+    </footer>
   {{/is}}
 </article>

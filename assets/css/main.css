@@ -362,7 +362,7 @@ body {
   color: #333333;
   font-family: Cardo, Gerogia, serif;
   font-size: 1.3em;
-  line-height: 1.6em;
+  line-height: 1.4em;
   -webkit-font-smoothing: antialiased;
 }
 a {
@@ -379,18 +379,22 @@ hr {
   height: 1px;
   border: 0;
   border-top: 1px solid #cccccc;
-  width: 25%;
-  margin: 2em auto;
+  width: 30%;
+  margin: 4rem auto 2rem auto;
 }
-blockquote {
-  border-left: 2px solid #cccccc;
-  padding: 0.1em 1em;
-  margin-left: 0.75em;
-}
+
 .main-wrapper {
   max-width: 42em;
   margin: 0 auto;
+  padding: 0 1em;
 }
+
+.content-wrapper {
+  max-width: 35em;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+
 .main-header {
   display: flex;
   flex-direction: row;
@@ -423,19 +427,26 @@ blockquote {
   margin-left: 0;
 }
 .main-footer {
-  margin-top: 4em;
+  margin-top: 10rem;
   text-align: center;
+  background-color: #F7F7F7;
+  padding: 1rem 0;
 }
 .post-header {
   text-align: center;
-  margin-bottom: 1.5em;
+  margin-top: 0;
+  margin-bottom: .5em;
 }
-.post-header h1 {
-  font-size: 2.5em;
+.post-title {
+  font-size: 2em;
   line-height: 1.3em;
-  margin-bottom: 0.5em;
+  margin-bottom: 0em;
   font-weight: normal;
 }
+.post-title.featured .permalink {
+  color: #FFD700;
+}
+
 .post-header .permalink {
   border: none;
 }
@@ -458,24 +469,75 @@ blockquote {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 .post-nav-item.prev {
-  text-align: right;
-}
-.post-nav-item.next {
   text-align: left;
 }
+
+.post-nav-item.prev:before {
+  content: "← ";
+  font-family: sans-serif;
+  vertical-align: middle;
+}
+
+.post-nav-item.next {
+  text-align: right;
+}
+
+.post-nav-item.next:after {
+  content: " →";
+  font-family: sans-serif;
+  vertical-align: middle;
+}
+
 .post-nav-item.prev:last-child,
 .post-nav-item.next:first-child {
   width: 100%;
-  text-align: center;
 }
+
 .post {
-  margin-top: 3em;
+  margin-bottom: 4em;
 }
+
 .post img {
   display: block;
   margin: 0 auto;
+  max-width: 100%;
 }
+
+.post-content p {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.post-content ul {
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+}
+
+.post-content li {
+  margin-bottom: .5rem;
+}
+
 .post-content hr {
   width: 10%;
+  margin: 3rem auto;
+}
+
+.post-content blockquote {
+  border-left: 2px solid #cccccc;
+  padding: 0.1em 1em;
+  margin-left: 0.75em;
+  font-style: italic;
+}
+
+.post-content blockquote.quote-lg {
+  margin: 0;
+  border: 0;
+  padding: 3rem 0;
+  font-size: 36px;
+  text-align: center;
+  line-height: 1.4;
+  position: relative;
+  margin-top: -2rem;
 }

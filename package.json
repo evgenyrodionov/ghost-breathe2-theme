@@ -1,14 +1,11 @@
 {
-  "name": "breathe-theme",
-  "version": "1.0.1",
+  "name": "breathe 2",
+  "version": "2.0.0",
   "description": "Minimalist theme for Ghost",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/belen-albeza/breathe-theme.git"
+    "url": "git+https://github.com/theaqua/ghost-breathe2-theme.git"
   },
   "keywords": [
     "ghost",
@@ -16,11 +13,14 @@
     "blog"
   ],
   "author": "Belén \"Benko\" Albeza",
+  "contributors": [
+    "Eugene Rodionov <github@theaqua.im> (https://github.com/theaqua)"
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/belen-albeza/breathe-theme/issues"
+    "url": "https://github.com/theaqua/ghost-breathe2-theme/issues"
   },
-  "homepage": "https://github.com/belen-albeza/breathe-theme#readme",
+  "homepage": "https://github.com/theaqua/ghost-breathe2-theme#readme",
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-less": "^3.0.3",
