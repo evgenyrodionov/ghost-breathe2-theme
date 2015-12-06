@@ -456,6 +456,10 @@ hr {
   color: #FFD700;
 }
 
+.post-time {
+  font-size: .8rem;
+}
+
 .post-header .permalink {
   border: none;
 }
