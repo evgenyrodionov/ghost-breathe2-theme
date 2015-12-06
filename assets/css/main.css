@@ -453,7 +453,7 @@ hr {
   font-weight: normal;
 }
 .post-title.featured .permalink {
-  color: #FFD700;
+  background-color: #fdf9ec;
 }
 
 .post-time {
