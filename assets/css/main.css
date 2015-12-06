@@ -356,6 +356,12 @@ td,
 th {
   padding: 0;
 }
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
   background: #ffffff;
   color: #333333;
@@ -363,6 +369,7 @@ body {
   font-size: 1.3em;
   line-height: 1.5em;
   -webkit-font-smoothing: antialiased;
+  margin-bottom: 10rem;
 }
 a {
   color: #000000;
@@ -426,10 +433,13 @@ hr {
   margin-left: 0;
 }
 .main-footer {
-  margin-top: 10rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   text-align: center;
   background-color: #F7F7F7;
   padding: 1rem 0;
+  height: 4.5rem;
 }
 .post-header {
   text-align: center;
