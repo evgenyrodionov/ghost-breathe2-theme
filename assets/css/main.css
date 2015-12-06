@@ -4,7 +4,6 @@
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-@import url(http://fonts.googleapis.com/css?family=Cardo:400,700,400italic);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -360,9 +359,9 @@ th {
 body {
   background: #ffffff;
   color: #333333;
-  font-family: Cardo, Gerogia, serif;
+  font-family: "PT Serif", Georgia, Palatino, Times, "Times New Roman", serif;
   font-size: 1.3em;
-  line-height: 1.4em;
+  line-height: 1.5em;
   -webkit-font-smoothing: antialiased;
 }
 a {
