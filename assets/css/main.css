@@ -390,21 +390,20 @@ hr {
 }
 
 .main-wrapper {
-  max-width: 42em;
+  max-width: 40em;
   margin: 0 auto;
   padding: 0 1em;
 }
 
 .content-wrapper {
-  max-width: 35em;
   margin: 0 auto;
-  margin-top: 2em;
 }
 
 .main-header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 2em;
 }
 .main-header > * {
   flex: 0 1 auto;
