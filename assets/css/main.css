@@ -368,7 +368,6 @@ body {
   font-family: "PT Serif", Georgia, Palatino, Times, "Times New Roman", serif;
   font-size: 1.3em;
   line-height: 1.5em;
-  -webkit-font-smoothing: antialiased;
   margin-bottom: 10rem;
 }
 a {
@@ -441,7 +440,6 @@ hr {
   height: 4.5rem;
 }
 .post-header {
-  text-align: center;
   margin-top: 0;
   margin-bottom: .5em;
 }
@@ -449,8 +447,9 @@ hr {
   font-size: 1.9em;
   line-height: 1.3em;
   margin-bottom: 0em;
-  font-weight: normal;
+  font-weight: bold;
 }
+
 .post-title.featured .permalink {
   background-color: #fdf9ec;
 }
@@ -459,9 +458,6 @@ hr {
   font-size: .8rem;
 }
 
-.post-header .permalink {
-  border: none;
-}
 .post-footer {
   text-align: center;
   margin-left: auto;
@@ -508,7 +504,7 @@ hr {
 }
 
 .post {
-  margin-bottom: 4em;
+  margin-bottom: 10rem;
 }
 
 .post img {
@@ -523,8 +519,12 @@ hr {
 }
 
 .post-content ul {
-  margin-top: -1rem;
+  margin-top: .5rem;
   margin-bottom: 2rem;
+}
+
+.post-content p + ul {
+  margin-top: -1rem;
 }
 
 .post-content li {

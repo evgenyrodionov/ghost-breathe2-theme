@@ -3,20 +3,13 @@
     <h1 class="post-title {{#if featured}}featured{{/if}}">
       <a href="{{url}}" class="permalink">{{title}}</a>
     </h1>
-    {{!-- <p class="post-meta">By <span class="author">{{author.name}}</span></p> --}}
+    <time class="post-time" datetime="{{date format='YYYY-MM-DD'}}">
+      {{date format='DD.MM.YYYY'}}
+    </time>
   </header>
 
   <div class="post-content">
-    {{#is "home"}}
-      {{excerpt words="35"}}… <a class="read-more" href="{{url}}">далее &raquo;</a>
-      <p>
-        <small class="post-time">
-          <time datetime="{{date format='YYYY-MM-DD'}}">{{date timeago='true'}}</time></a>
-        </small>
-      </p>
-    {{else}}
-      {{content}}
-    {{/is}}
+    {{content}}
   </div>
 
   {{^is "home, page"}}
