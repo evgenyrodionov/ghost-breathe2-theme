@@ -366,7 +366,7 @@ body {
   background: #ffffff;
   color: #333333;
   font-family: "PT Serif", Georgia, Palatino, Times, "Times New Roman", serif;
-  font-size: 1.3em;
+  font-size: 1.4rem;
   line-height: 1.5em;
   margin-bottom: 10rem;
 }
@@ -507,43 +507,54 @@ hr {
   margin-bottom: 10rem;
 }
 
+.post pre {
+  background: #111;
+  color: #fff;
+  padding: 2rem;
+}
+
 .post img {
   display: block;
   margin: 0 auto;
   max-width: 100%;
 }
 
-.post-content p {
+.post h2:not(:first-child) {
+  margin-top: 5rem;
+  line-height: 1.3;
+}
+
+.post p {
   margin-top: 0;
   margin-bottom: 2rem;
 }
 
-.post-content ul {
+.post ul {
   margin-top: .5rem;
   margin-bottom: 2rem;
 }
 
-.post-content p + ul {
+.post p + ul {
   margin-top: -1rem;
 }
 
-.post-content li {
+.post li {
   margin-bottom: .5rem;
 }
 
-.post-content hr {
+.post hr {
   width: 10%;
   margin: 3rem auto;
 }
 
-.post-content blockquote {
+.post blockquote {
   border-left: 2px solid #cccccc;
   padding: 0.1em 1em;
   margin-left: 0.75em;
   font-style: italic;
 }
 
-.post-content blockquote.quote-lg {
+.post blockquote.quote-lg {
   margin: 0;
   border: 0;
   padding: 3rem 0;
