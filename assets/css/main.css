@@ -450,7 +450,7 @@ hr {
   font-weight: bold;
 }
 
-.post-title.featured .permalink {
+.post-featured .permalink {
   background-color: #fdf9ec;
 }
 
