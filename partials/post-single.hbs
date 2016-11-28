@@ -3,7 +3,7 @@
     <h1 class="post-title {{#if featured}}featured{{/if}}">
       <a href="{{url}}" class="permalink">{{title}}</a>
     </h1>
-    {{#is "home"}}
+    {{^is "page"}}
       <time class="post-time" datetime="{{date format='YYYY-MM-DD'}}">
         {{date format='DD.MM.YYYY'}}
       </time>
@@ -22,5 +22,7 @@
         {{#next_post}}<span class="post-nav-item next"><a href="{{url}}">{{title}}</a></span>{{/next_post}}
       </nav>
     </footer>
+    <hr>
+    <div id="disqus_thread"></div>
   {{/is}}
 </article>
