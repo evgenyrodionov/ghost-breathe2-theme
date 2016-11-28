@@ -3,9 +3,11 @@
     <h1 class="post-title {{#if featured}}featured{{/if}}">
       <a href="{{url}}" class="permalink">{{title}}</a>
     </h1>
-    <time class="post-time" datetime="{{date format='YYYY-MM-DD'}}">
-      {{date format='DD.MM.YYYY'}}
-    </time>
+    {{#is "home"}}
+      <time class="post-time" datetime="{{date format='YYYY-MM-DD'}}">
+        {{date format='DD.MM.YYYY'}}
+      </time>
+    {{/is}}
   </header>
 
   <div class="post-content">
